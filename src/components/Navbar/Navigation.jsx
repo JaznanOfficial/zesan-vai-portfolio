@@ -56,10 +56,11 @@ const Navigation = () => {
                 <a className="btn btn-ghost normal-case text-xl md:hidden ml-12">Zesan</a>
             </div>
             <div className="navbar-center hidden lg:flex">
-                <ul className="menu menu-horizontal px-0 mt-10 bg-[#F5F5F5] py-2 rounded-3xl">
+                <ul className="menu menu-horizontal px-0 my-10 bg-[#F5F5F5] py-2 rounded-3xl">
                     <li className="mx-1 md:mx-2 py-3 rounded-3xl bg-black text-white px-5 cursor-pointer">
                         Zesan H.
                     </li>
+
                     <li className="mx-1 md:mx-2 py-3 rounded-3xl bg-[#E5E5E6] px-5 cursor-pointer">
                         Projects
                     </li>
