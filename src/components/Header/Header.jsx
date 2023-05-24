@@ -6,8 +6,8 @@ import profilePic from "/src/assets/images/zesan.png";
 
 const Header = () => {
     return (
-        <div className="grid grid-cols-3 items-start justify-center gap-[32px] mx-auto">
-            <div className="w-full bg-[#EEEEEF] p-[24px] md:h-[492px] col-span-3 md:col-span-2 ">
+        <div className="grid grid-cols-7 items-start justify-center gap-10 mx-auto">
+            <div className="w-full bg-[#EEEEEF] p-[24px] md:h-[520px] col-span-7 md:col-span-5 ">
                 <h1 className="text-[34px] font-bold leading-[48px]">
                     Hello! I’m Zesan H, a software designer with 6 years of experience.
                 </h1>
@@ -36,7 +36,7 @@ const Header = () => {
                         </a>{" "}
                     </span>
                 </p>
-                <div className="flex flex-row md:mt-[90px] mt-5 justify-center md:justify-start">
+                <div className="flex flex-row md:mt-[150px] mt-5 justify-center md:justify-start">
                     <button className="text-[17px] text-white mx-1 md:mx-2 md:py-3 py-1 rounded-3xl bg-black md:px-5 px-3 cursor-pointer">
                         <i class="fa-solid fa-envelope"></i> Email me
                     </button>
@@ -46,8 +46,15 @@ const Header = () => {
                     </button>
                 </div>
             </div>
-            <div className="w-full col-span-3 md:col-span-1 order-first md:order-last">
-                <Image alt="zesan img" src={profilePic} width={402} height={492} loading="lazy" />
+            <div className="w-full col-span-7 md:col-span-2 order-first md:order-last">
+                <Image
+                    alt="zesan img"
+                    src={profilePic}
+                    width={425}
+                    height={492}
+                    loading="lazy"
+                    className="text-center"
+                />
             </div>
         </div>
     );
