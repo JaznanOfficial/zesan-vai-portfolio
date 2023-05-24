@@ -19,17 +19,17 @@ const Carousel = () => {
         dots: false,
         infinite: true,
         slidesToShow: 4,
-        slidesToScroll: 1,
+        slidesToScroll: 8,
         autoplay: true,
-        speed: 2000,
-        autoplaySpeed: 2000,
+        speed: 8000,
+        autoplaySpeed: 0,
         cssEase: "linear",
         responsive: [
             {
                 breakpoint: 600,
                 settings: {
                     slidesToShow: 2,
-                    slidesToScroll: 2,
+                    slidesToScroll: 8,
                     initialSlide: 2,
                 },
             },
@@ -37,7 +37,7 @@ const Carousel = () => {
                 breakpoint: 480,
                 settings: {
                     slidesToShow: 1,
-                    slidesToScroll: 1,
+                    slidesToScroll: 8,
                 },
             },
         ],
@@ -107,6 +107,7 @@ const Carousel = () => {
                             alt={item?.name}
                             width={item.width}
                             height={item.height}
+                            loading="lazy"
                         />
                     </div>
                 ))}
