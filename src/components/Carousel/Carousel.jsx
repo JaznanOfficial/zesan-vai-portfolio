@@ -18,12 +18,29 @@ const Carousel = () => {
     const settings = {
         dots: false,
         infinite: true,
-        slidesToShow: 3,
+        slidesToShow: 4,
         slidesToScroll: 1,
         autoplay: true,
         speed: 2000,
         autoplaySpeed: 2000,
         cssEase: "linear",
+        responsive: [
+            {
+                breakpoint: 600,
+                settings: {
+                    slidesToShow: 2,
+                    slidesToScroll: 2,
+                    initialSlide: 2,
+                },
+            },
+            {
+                breakpoint: 480,
+                settings: {
+                    slidesToShow: 1,
+                    slidesToScroll: 1,
+                },
+            },
+        ],
     };
 
     const items = [
@@ -81,7 +98,10 @@ const Carousel = () => {
         <div className="w-full bg-[#FAFAFA] py-5 my-10 h-24 items-center justify-center">
             <Slider {...settings} className="flex flex-row items-center">
                 {items.map((item) => (
-                    <div key={item.name} className="flex justify-center items-center w-24 h-24">
+                    <div
+                        key={item.name}
+                        className="mx-10 flex justify-center items-center w-24 h-24"
+                    >
                         <Image
                             src={item?.img}
                             alt={item?.name}
