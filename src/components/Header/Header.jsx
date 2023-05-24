@@ -47,7 +47,7 @@ const Header = () => {
                 </div>
             </div>
             <div className="w-full col-span-3 md:col-span-1 order-first md:order-last">
-                <Image alt="zesan img" src={profilePic} width={402} height={492} />
+                <Image alt="zesan img" src={profilePic} width={402} height={492} loading="lazy" />
             </div>
         </div>
     );
